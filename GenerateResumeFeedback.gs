@@ -75,8 +75,8 @@ function extractTextFromPdf(fileId) {
 }
 
 function generateFeedback(text, role) {
-  var apiKey = 'AIzaSyCKJQlgx5c-mQZkxT5OkkJXBYohHMKuuAY'; // Replace with your actual API key
-  var url = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=' + apiKey;
+  var apiKey = 'Enter apiKey'; // Replace with your actual API key
+  var url = 'Enter api url' + apiKey;
   
   // Define your prompt to encourage structured feedback
   var prompt = `Generate feedback for the resume text for the role of: ${role}. 
