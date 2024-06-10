@@ -8,16 +8,16 @@ Sure! Here is a README file that explains the usage and functionality of the pro
 
 This project consists of a Google Apps Script that enhances the functionality of a Google Sheet. The script performs three main functions:
 
-1. Restricts editing based on user roles.
+1. Restrict editing based on user roles.
 2. Generates feedback for resumes in the sheet using the Gemini API.
-3. Sends the generated resume feedback to specified email addresses.
+3. Send the generated resume feedback to specified email addresses.
 
 ## Features
 
 1. **Edit Restriction**: Ensures only the respective user or an admin can edit certain rows.
 2. **Feedback Generate**: Uses the Gemini API to generate feedback for texts in the sheet.
 3. **Email Summaries**: Sends the generated Feedback to specified email addresses.
-4. **Dedaline management**: Sends the missed deadline mail to specified email address if the resume is not submitted.
+4. **Deadline management**: Sends the missed deadline mail to a specified email address if the resume is not submitted.
 
 ## Files
 
@@ -26,7 +26,7 @@ The project consists of four main script files:
 1. `emailprotection.gs` - Handles the edit restrictions.
 2. `deadlinemanagement.gs` - Manages the deadline.
 3. `GenerateResumeFeedback.gs` - Sends the generated summaries via email.
-4. `button.gs` - For a button on menu bar of the sheet to run the script.
+4. `button.gs` - For a button on the menu bar of the sheet to run the script.
 
 ## Installation and Setup
 
@@ -57,7 +57,7 @@ The `emailprotection.gs` function checks if the user attempting to edit a row is
 
 ### 2. Generating Feedback
 
-The `generateResumeFeedback.gs` function fetches text entries from column B of the `Student` sheet, sends them to the Gemini API for summarization, and writes the summaries to column D and send the feedback to the respective emails.
+The `generateResumeFeedback.gs` function fetches text entries from column B of the `Student` sheet, sends them to the Gemini API for summarization, writes the summaries to column D, and sends the feedback to the respective emails.
 
 - **API Key**: Ensure you have a valid Gemini API key and replace the placeholder in the script with your actual key.
 
